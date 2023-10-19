@@ -214,7 +214,7 @@ public class Host {
 
 		if (!getBwProvisioner().allocateBwForVm(vm, vm.getCurrentRequestedBw())) {
 			Log.printLine("[VmScheduler.vmCreate] Allocation of VM #" + vm.getId() + " to Host #" + getId()
-					+ " failed by BW");
+					+ " failed by BW. Requested:" + vm.getCurrentRequestedBw());
 			getRamProvisioner().deallocateRamForVm(vm);
 			return false;
 		}

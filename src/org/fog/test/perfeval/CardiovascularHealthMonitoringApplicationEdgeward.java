@@ -66,7 +66,6 @@ public class CardiovascularHealthMonitoringApplicationEdgeward {
             Application application = createApplication(appId, broker.getId());
             application.setUserId(broker.getId());
 
-            //
             DataParser dataObject = new DataParser();
             locator = new LocationHandler(dataObject);
 
@@ -79,9 +78,6 @@ public class CardiovascularHealthMonitoringApplicationEdgeward {
 
             createMobileUser(broker.getId(), appId, datasetReference);
             createFogDevices(broker.getId(), appId);
-
-
-            //
 
             ModuleMapping moduleMapping = ModuleMapping.createModuleMapping(); // initializing a module mapping
 
@@ -116,8 +112,9 @@ public class CardiovascularHealthMonitoringApplicationEdgeward {
 
     private static void createMobileUser(int userId, String appId, String datasetReference) throws IOException {
 
-        for (int id = 1; id <= numberOfMobileUser; id++)
+        for (int id = 1; id <= numberOfMobileUser; id++) {
             userMobilityPattern.put(id, References.DIRECTIONAL_MOBILITY);
+        }
 
         locator.parseUserInfo(userMobilityPattern, datasetReference);
 

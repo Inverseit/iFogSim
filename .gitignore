@@ -6,3 +6,4 @@ bin/
 *.class
 *.vscode
 out/production/iFogSim2/org/fog/test/perfeval/VRGameFog.class
+/ulan.txt

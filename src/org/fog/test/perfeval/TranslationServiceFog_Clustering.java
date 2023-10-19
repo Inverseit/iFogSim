@@ -86,7 +86,7 @@ public class TranslationServiceFog_Clustering {
                 createRandomMobilityDatasets(References.random_walk_mobility_model, datasetReference, renewDataset);
             }
 
-            createMobileUser(broker.getId(), appId, datasetReference);
+            createMobileUser(broker.getId(), appId, "./dataset/random_usersLocation-melbCBD_");
             createFogDevices(broker.getId(), appId);
 
 

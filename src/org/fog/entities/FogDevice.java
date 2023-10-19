@@ -683,8 +683,8 @@ public class FogDevice extends PowerDatacenter {
 		/*if(getName().equals("d-0") && tuple.getTupleType().equals("_SENSOR")){
 			System.out.println(++numClients);
 		}*/
-        Logger.debug(getName(), "Received tuple " + tuple.getCloudletId() + "with tupleType = " + tuple.getTupleType() + "\t| Source : " +
-                CloudSim.getEntityName(ev.getSource()) + "|Dest : " + CloudSim.getEntityName(ev.getDestination()));
+        Logger.debug(getName(), "Received tuple [" + tuple.getCloudletId() + "] with tupleType = " + tuple.getTupleType() + "\t| Source : " +
+                CloudSim.getEntityName(ev.getSource()) + " | Dest : " + CloudSim.getEntityName(ev.getDestination()));
 		
 		/*if(CloudSim.getEntityName(ev.getSource()).equals("drone_0")||CloudSim.getEntityName(ev.getDestination()).equals("drone_0"))
 			System.out.println(CloudSim.clock()+" "+getName()+" Received tuple "+tuple.getCloudletId()+" with tupleType = "+tuple.getTupleType()+"\t| Source : "+

@@ -34,6 +34,8 @@ import org.fog.utils.FogUtils;
 import org.fog.utils.TimeKeeper;
 import org.fog.utils.distribution.DeterministicDistribution;
 
+import static org.fog.test.perfeval.OutputRedirector.*;
+
 /**
  * Simulation setup for case study 1 - EEG Beam Tractor Game
  * @author Harshit Gupta
@@ -55,7 +57,8 @@ public class TwoApps {
 		Log.printLine("Starting TwoApps...");
 
 		try {
-			Log.disable();
+			//Log.disable();
+			redirectOutputToFile("ulan.txt");
 			int num_user = 1; // number of cloud users
 			Calendar calendar = Calendar.getInstance();
 			boolean trace_flag = false; // mean trace events

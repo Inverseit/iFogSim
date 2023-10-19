@@ -25,7 +25,6 @@ public class LocationHandler {
 
 	public LocationHandler() {
 		// TODO Auto-generated constructor stub
-
 	}
 	
 	public DataParser getDataObject(){

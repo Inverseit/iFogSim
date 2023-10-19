@@ -54,12 +54,10 @@ public class VRGameFog {
 	public static void main(String[] args) {
 
 		Log.printLine("Starting VRGame...");
-
 		try {
-			Log.disable();
 			int num_user = 1; // number of cloud users
 			Calendar calendar = Calendar.getInstance();
-			boolean trace_flag = false; // mean trace events
+			boolean trace_flag = true; // mean trace events
 
 			CloudSim.init(num_user, calendar, trace_flag);
 
@@ -207,8 +205,7 @@ public class VRGameFog {
 		double time_zone = 10.0; // time zone this resource located
 		double cost = 3.0; // the cost of using processing in this resource
 		double costPerMem = 0.05; // the cost of using memory in this resource
-		double costPerStorage = 0.001; // the cost of using storage in this
-										// resource
+		double costPerStorage = 0.001; // the cost of using storage in this resource
 		double costPerBw = 0.0; // the cost of using bw in this resource
 		LinkedList<Storage> storageList = new LinkedList<Storage>(); // we are not adding SAN
 													// devices by now

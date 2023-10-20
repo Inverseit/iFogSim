@@ -1,0 +1,99 @@
+Initialising...
+Creating [ControllerModule] on device CONTROLLER
+Creating [helper_client_0] on device helper_device_0
+Starting CloudSim version 3.0
+cloud is starting...
+CONTROLLER is starting...
+helper_device_0 is starting...
+0.0 Submitted application thisApp
+Entities started.
+350.00 : Initiator0_t : Sending tuple with tupleId = 1
+350.00 : Initiator1_t : Sending tuple with tupleId = 2
+365.00 : CONTROLLER : Received tuple [1] with tupleType = Initiator0_t	| Source : Initiator0_t | Dest : CONTROLLER
+365.00 : CONTROLLER : Executing tuple on module ControllerModule
+365.00 : CONTROLLER : Received tuple [2] with tupleType = Initiator1_t	| Source : Initiator1_t | Dest : CONTROLLER
+365.00 : CONTROLLER : Executing tuple on module ControllerModule
+
+366.53: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 0.00 to 366.53:
+
+366.53: [Host #2] utilization at 0.00 was 0.00%, now is 0.00%
+366.53: [Host #2] energy is 0.00 W*sec
+
+366.53: Data center's energy is 0.00 W*sec
+
+366.53 : CONTROLLER : Completed execution of tuple 1on ControllerModule
+366.53 : CONTROLLER : Completed execution of tuple 2on ControllerModule
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+366.63 : CONTROLLER : Received tuple [3] with tupleType = j0_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+366.63 : CONTROLLER : Received tuple [4] with tupleType = j1_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+
+375.00: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 366.53 to 375.00:
+
+375.00: [Host #2] utilization at 366.53 was 0.00%, now is 0.00%
+375.00: [Host #2] energy is 0.00 W*sec
+
+375.00: Data center's energy is 0.00 W*sec
+
+
+467.13 : helper_device_0 : Received tuple [3] with tupleType = j0_p0_Data	| Source : CONTROLLER | Dest : helper_device_0
+467.13 : helper_device_0 : Executing tuple on module helper_client_0
+467.63 : helper_device_0 : Received tuple [4] with tupleType = j1_p0_Data	| Source : CONTROLLER | Dest : helper_device_0
+467.63 : helper_device_0 : Executing tuple on module helper_client_0
+
+467.63: [Host #3] utilization is 0.00%
+
+Energy consumption for the last time frame from 0.00 to 467.63:
+
+467.63: [Host #3] utilization at 0.00 was 0.00%, now is 0.00%
+467.63: [Host #3] energy is 0.00 W*sec
+
+467.63: Data center's energy is 0.00 W*sec
+
+
+
+477.63: [Host #3] utilization is 0.00%
+
+Energy consumption for the last time frame from 467.63 to 477.63:
+
+477.63: [Host #3] utilization at 467.63 was 0.00%, now is 0.00%
+477.63: [Host #3] energy is 0.00 W*sec
+
+477.63: Data center's energy is 0.00 W*sec
+
+
+
+487.63: [Host #3] utilization is 0.00%
+
+Energy consumption for the last time frame from 477.63 to 487.63:
+
+487.63: [Host #3] utilization at 477.63 was 0.00%, now is 0.00%
+487.63: [Host #3] energy is 0.00 W*sec
+
+487.63: Data center's energy is 0.00 W*sec
+
+
+Simulation completed.
+=========================================
+============== RESULTS ==================
+=========================================
+EXECUTION TIME : 22
+=========================================
+APPLICATION LOOP DELAYS
+=========================================
+[Initiator0_t, ControllerModule, helper_client_0, ControllerModule, Finalizer0_t] ---> null
+[Initiator1_t, ControllerModule, helper_client_0, ControllerModule, Finalizer1_t] ---> null
+=========================================
+TUPLE CPU EXECUTION DELAY
+=========================================
+Initiator1_t ---> 1.5285714285714107
+Initiator0_t ---> 1.5285714285714107
+=========================================
+CONTROLLER : Energy Consumed = 173135.69906999994
+helper_device_0 : Energy Consumed = 167425.0
+Unwanted errors happen

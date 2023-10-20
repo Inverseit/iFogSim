@@ -1,0 +1,258 @@
+Initialising...
+Creating [ControllerModule] on device CONTROLLER
+Creating [helper_client_0] on device helper_device_0
+Starting CloudSim version 3.0
+cloud is starting...
+CONTROLLER is starting...
+helper_device_0 is starting...
+0.0 Submitted application thisApp
+Entities started.
+60.00 : Initiator0_t : Sending tuple with tupleId = 1
+60.00 : Initiator1_t : Sending tuple with tupleId = 2
+70.00 : Initiator0_t : Sending tuple with tupleId = 3
+70.00 : Initiator1_t : Sending tuple with tupleId = 4
+80.00 : Initiator0_t : Sending tuple with tupleId = 5
+80.00 : Initiator1_t : Sending tuple with tupleId = 6
+90.00 : Initiator0_t : Sending tuple with tupleId = 7
+90.00 : Initiator1_t : Sending tuple with tupleId = 8
+100.00 : Initiator0_t : Sending tuple with tupleId = 9
+100.00 : Initiator1_t : Sending tuple with tupleId = 10
+110.00 : Initiator0_t : Sending tuple with tupleId = 11
+110.00 : Initiator1_t : Sending tuple with tupleId = 12
+120.00 : Initiator0_t : Sending tuple with tupleId = 13
+120.00 : Initiator1_t : Sending tuple with tupleId = 14
+130.00 : Initiator0_t : Sending tuple with tupleId = 15
+130.00 : Initiator1_t : Sending tuple with tupleId = 16
+140.00 : Initiator0_t : Sending tuple with tupleId = 17
+140.00 : Initiator1_t : Sending tuple with tupleId = 18
+150.00 : Initiator0_t : Sending tuple with tupleId = 19
+150.00 : Initiator1_t : Sending tuple with tupleId = 20
+160.00 : Initiator0_t : Sending tuple with tupleId = 21
+160.00 : Initiator1_t : Sending tuple with tupleId = 22
+170.00 : Initiator0_t : Sending tuple with tupleId = 23
+170.00 : Initiator1_t : Sending tuple with tupleId = 24
+180.00 : Initiator0_t : Sending tuple with tupleId = 25
+180.00 : Initiator1_t : Sending tuple with tupleId = 26
+183.00 : CONTROLLER : Received tuple [1] with tupleType = Initiator0_t	| Source : Initiator0_t | Dest : CONTROLLER
+183.00 : CONTROLLER : Executing tuple on module ControllerModule
+183.00 : CONTROLLER : Received tuple [2] with tupleType = Initiator1_t	| Source : Initiator1_t | Dest : CONTROLLER
+183.00 : CONTROLLER : Executing tuple on module ControllerModule
+
+184.53: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 0.00 to 184.53:
+
+184.53: [Host #2] utilization at 0.00 was 0.00%, now is 0.00%
+184.53: [Host #2] energy is 0.00 W*sec
+
+184.53: Data center's energy is 0.00 W*sec
+
+184.53 : CONTROLLER : Completed execution of tuple 1on ControllerModule
+184.53 : CONTROLLER : Completed execution of tuple 2on ControllerModule
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+184.63 : CONTROLLER : Received tuple [27] with tupleType = j0_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+184.63 : CONTROLLER : Received tuple [28] with tupleType = j1_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+190.00 : Initiator0_t : Sending tuple with tupleId = 29
+190.00 : Initiator1_t : Sending tuple with tupleId = 30
+193.00 : CONTROLLER : Received tuple [3] with tupleType = Initiator0_t	| Source : Initiator0_t | Dest : CONTROLLER
+193.00 : CONTROLLER : Executing tuple on module ControllerModule
+
+193.00: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 184.53 to 193.00:
+
+193.00: [Host #2] utilization at 184.53 was 0.00%, now is 0.00%
+193.00: [Host #2] energy is 0.00 W*sec
+
+193.00: Data center's energy is 0.00 W*sec
+
+
+193.00 : CONTROLLER : Received tuple [4] with tupleType = Initiator1_t	| Source : Initiator1_t | Dest : CONTROLLER
+193.00 : CONTROLLER : Executing tuple on module ControllerModule
+200.00 : Initiator0_t : Sending tuple with tupleId = 31
+200.00 : Initiator1_t : Sending tuple with tupleId = 32
+203.00 : CONTROLLER : Received tuple [5] with tupleType = Initiator0_t	| Source : Initiator0_t | Dest : CONTROLLER
+203.00 : CONTROLLER : Executing tuple on module ControllerModule
+
+203.00: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 193.00 to 203.00:
+
+203.00: [Host #2] utilization at 193.00 was 0.00%, now is 0.00%
+203.00: [Host #2] energy is 0.00 W*sec
+
+203.00: Data center's energy is 0.00 W*sec
+
+203.00 : CONTROLLER : Completed execution of tuple 3on ControllerModule
+203.00 : CONTROLLER : Completed execution of tuple 4on ControllerModule
+
+203.00 : CONTROLLER : Received tuple [6] with tupleType = Initiator1_t	| Source : Initiator1_t | Dest : CONTROLLER
+203.00 : CONTROLLER : Executing tuple on module ControllerModule
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+203.10 : CONTROLLER : Received tuple [33] with tupleType = j0_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+203.10 : CONTROLLER : Received tuple [34] with tupleType = j1_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+210.00 : Initiator0_t : Sending tuple with tupleId = 35
+210.00 : Initiator1_t : Sending tuple with tupleId = 36
+213.00 : CONTROLLER : Received tuple [7] with tupleType = Initiator0_t	| Source : Initiator0_t | Dest : CONTROLLER
+213.00 : CONTROLLER : Executing tuple on module ControllerModule
+
+213.00: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 203.00 to 213.00:
+
+213.00: [Host #2] utilization at 203.00 was 0.00%, now is 0.00%
+213.00: [Host #2] energy is 0.00 W*sec
+
+213.00: Data center's energy is 0.00 W*sec
+
+213.00 : CONTROLLER : Completed execution of tuple 5on ControllerModule
+213.00 : CONTROLLER : Completed execution of tuple 6on ControllerModule
+
+213.00 : CONTROLLER : Received tuple [8] with tupleType = Initiator1_t	| Source : Initiator1_t | Dest : CONTROLLER
+213.00 : CONTROLLER : Executing tuple on module ControllerModule
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+213.10 : CONTROLLER : Received tuple [37] with tupleType = j0_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+213.10 : CONTROLLER : Received tuple [38] with tupleType = j1_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+220.00 : Initiator0_t : Sending tuple with tupleId = 39
+220.00 : Initiator1_t : Sending tuple with tupleId = 40
+223.00 : CONTROLLER : Received tuple [9] with tupleType = Initiator0_t	| Source : Initiator0_t | Dest : CONTROLLER
+223.00 : CONTROLLER : Executing tuple on module ControllerModule
+
+223.00: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 213.00 to 223.00:
+
+223.00: [Host #2] utilization at 213.00 was 0.00%, now is 0.00%
+223.00: [Host #2] energy is 0.00 W*sec
+
+223.00: Data center's energy is 0.00 W*sec
+
+223.00 : CONTROLLER : Completed execution of tuple 7on ControllerModule
+223.00 : CONTROLLER : Completed execution of tuple 8on ControllerModule
+
+223.00 : CONTROLLER : Received tuple [10] with tupleType = Initiator1_t	| Source : Initiator1_t | Dest : CONTROLLER
+223.00 : CONTROLLER : Executing tuple on module ControllerModule
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+223.10 : CONTROLLER : Received tuple [41] with tupleType = j0_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+223.10 : CONTROLLER : Received tuple [42] with tupleType = j1_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+230.00 : Initiator0_t : Sending tuple with tupleId = 43
+230.00 : Initiator1_t : Sending tuple with tupleId = 44
+233.00 : CONTROLLER : Received tuple [11] with tupleType = Initiator0_t	| Source : Initiator0_t | Dest : CONTROLLER
+233.00 : CONTROLLER : Executing tuple on module ControllerModule
+
+233.00: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 223.00 to 233.00:
+
+233.00: [Host #2] utilization at 223.00 was 0.00%, now is 0.00%
+233.00: [Host #2] energy is 0.00 W*sec
+
+233.00: Data center's energy is 0.00 W*sec
+
+233.00 : CONTROLLER : Completed execution of tuple 9on ControllerModule
+233.00 : CONTROLLER : Completed execution of tuple 10on ControllerModule
+
+233.00 : CONTROLLER : Received tuple [12] with tupleType = Initiator1_t	| Source : Initiator1_t | Dest : CONTROLLER
+233.00 : CONTROLLER : Executing tuple on module ControllerModule
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+233.10 : CONTROLLER : Received tuple [45] with tupleType = j0_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+233.10 : CONTROLLER : Received tuple [46] with tupleType = j1_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+240.00 : Initiator0_t : Sending tuple with tupleId = 47
+240.00 : Initiator1_t : Sending tuple with tupleId = 48
+243.00 : CONTROLLER : Received tuple [13] with tupleType = Initiator0_t	| Source : Initiator0_t | Dest : CONTROLLER
+243.00 : CONTROLLER : Executing tuple on module ControllerModule
+
+243.00: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 233.00 to 243.00:
+
+243.00: [Host #2] utilization at 233.00 was 0.00%, now is 0.00%
+243.00: [Host #2] energy is 0.00 W*sec
+
+243.00: Data center's energy is 0.00 W*sec
+
+243.00 : CONTROLLER : Completed execution of tuple 11on ControllerModule
+243.00 : CONTROLLER : Completed execution of tuple 12on ControllerModule
+
+243.00 : CONTROLLER : Received tuple [14] with tupleType = Initiator1_t	| Source : Initiator1_t | Dest : CONTROLLER
+243.00 : CONTROLLER : Executing tuple on module ControllerModule
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+243.10 : CONTROLLER : Received tuple [49] with tupleType = j0_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+243.10 : CONTROLLER : Received tuple [50] with tupleType = j1_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+250.00 : Initiator0_t : Sending tuple with tupleId = 51
+250.00 : Initiator1_t : Sending tuple with tupleId = 52
+253.00 : CONTROLLER : Received tuple [15] with tupleType = Initiator0_t	| Source : Initiator0_t | Dest : CONTROLLER
+253.00 : CONTROLLER : Executing tuple on module ControllerModule
+
+253.00: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 243.00 to 253.00:
+
+253.00: [Host #2] utilization at 243.00 was 0.00%, now is 0.00%
+253.00: [Host #2] energy is 0.00 W*sec
+
+253.00: Data center's energy is 0.00 W*sec
+
+253.00 : CONTROLLER : Completed execution of tuple 13on ControllerModule
+253.00 : CONTROLLER : Completed execution of tuple 14on ControllerModule
+
+253.00 : CONTROLLER : Received tuple [16] with tupleType = Initiator1_t	| Source : Initiator1_t | Dest : CONTROLLER
+253.00 : CONTROLLER : Executing tuple on module ControllerModule
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+253.10 : CONTROLLER : Received tuple [53] with tupleType = j0_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+253.10 : CONTROLLER : Received tuple [54] with tupleType = j1_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+260.00 : Initiator0_t : Sending tuple with tupleId = 55
+260.00 : Initiator1_t : Sending tuple with tupleId = 56
+263.00 : CONTROLLER : Received tuple [17] with tupleType = Initiator0_t	| Source : Initiator0_t | Dest : CONTROLLER
+263.00 : CONTROLLER : Executing tuple on module ControllerModule
+
+263.00: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 253.00 to 263.00:
+
+263.00: [Host #2] utilization at 253.00 was 0.00%, now is 0.00%
+263.00: [Host #2] energy is 0.00 W*sec
+
+263.00: Data center's energy is 0.00 W*sec
+
+263.00 : CONTROLLER : Completed execution of tuple 15on ControllerModule
+263.00 : CONTROLLER : Completed execution of tuple 16on ControllerModule
+
+263.00 : CONTROLLER : Received tuple [18] with tupleType = Initiator1_t	| Source : Initiator1_t | Dest : CONTROLLER
+263.00 : CONTROLLER : Executing tuple on module ControllerModule
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+263.10 : CONTROLLER : Received tuple [57] with tupleType = j0_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+263.10 : CONTROLLER : Received tuple [58] with tupleType = j1_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+270.00 : Initiator0_t : Sending tuple with tupleId = 59
+270.00 : Initiator1_t : Sending tuple with tupleId = 60
+273.00 : CONTROLLER : Received tuple [19] with tupleType = Initiator0_t	| Source : Initiator0_t | Dest : CONTROLLER
+273.00 : CONTROLLER : Executing tuple on module ControllerModule
+
+273.00: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 263.00 to 273.00:
+
+273.00: [Host #2] utilization at 263.00 was 0.00%, now is 0.00%
+273.00: [Host #2] energy is 0.00 W*sec
+
+273.00: Data center's energy is 0.00 W*sec
+
+273.00 : CONTROLLER : Completed execution of tuple 17on ControllerModule
+273.00 : CONTROLLER : Completed execution of tuple 18on ControllerModule
+
+273.00 : CONTROLLER : Received tuple [20] with tupleType = Initiator1_t	| Source : Initiator1_t | Dest : CONTROLLER
+273.00 : CONTROLLER : Executing tuple on module ControllerModule
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+273.10 : CONTROLLER : Received tuple [61] with tupleType = j0_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+273.10 : CONTROLLER : Received tuple [62] with tupleType = j1_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+280.00 : Initiator0_t : Sending tuple with tupleId = 63

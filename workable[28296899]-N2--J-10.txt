@@ -1,0 +1,661 @@
+Initialising...
+Creating [ControllerModule] on device CONTROLLER
+Creating [helper_client_1] on device helper_device_1
+Creating [helper_client_0] on device helper_device_0
+Starting CloudSim version 3.0
+cloud is starting...
+CONTROLLER is starting...
+helper_device_0 is starting...
+helper_device_1 is starting...
+0.0 Submitted application thisApp
+Entities started.
+50.00 : Initiator0_t : Sending tuple with tupleId = 1
+65.00 : CONTROLLER : Received tuple [1] with tupleType = Initiator0_t	| Source : Initiator0_t | Dest : CONTROLLER
+65.00 : CONTROLLER : Executing tuple on module ControllerModule
+
+65.81: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 0.00 to 65.81:
+
+65.81: [Host #2] utilization at 0.00 was 0.00%, now is 0.00%
+65.81: [Host #2] energy is 0.00 W*sec
+
+65.81: Data center's energy is 0.00 W*sec
+
+65.81 : CONTROLLER : Completed execution of tuple 1on ControllerModule
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+65.91 : CONTROLLER : Received tuple [2] with tupleType = j0_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+
+75.00: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 65.81 to 75.00:
+
+75.00: [Host #2] utilization at 65.81 was 0.00%, now is 0.00%
+75.00: [Host #2] energy is 0.00 W*sec
+
+75.00: Data center's energy is 0.00 W*sec
+
+
+81.41 : helper_device_0 : Received tuple [2] with tupleType = j0_p0_Data	| Source : CONTROLLER | Dest : helper_device_0
+81.41 : helper_device_0 : Executing tuple on module helper_client_0
+81.91 : helper_device_1 : Received tuple [2] with tupleType = j0_p0_Data	| Source : CONTROLLER | Dest : helper_device_1
+
+91.41: [Host #3] utilization is 0.00%
+
+Energy consumption for the last time frame from 0.00 to 91.41:
+
+91.41: [Host #3] utilization at 0.00 was 0.00%, now is 0.00%
+91.41: [Host #3] energy is 0.00 W*sec
+
+91.41: Data center's energy is 0.00 W*sec
+
+91.41 : helper_device_0 : Completed execution of tuple 2on helper_client_0
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from helper_device_0 with event tag = 20
+
+91.51: [Host #3] utilization is 0.00%
+
+Energy consumption for the last time frame from 91.41 to 91.51:
+
+91.51: [Host #3] utilization at 91.41 was 0.00%, now is 0.00%
+91.51: [Host #3] energy is 0.00 W*sec
+
+91.51: Data center's energy is 0.00 W*sec
+
+
+91.51 : helper_device_0 : Received tuple [3] with tupleType = j0_p0_Result	| Source : helper_device_0 | Dest : helper_device_0
+107.51 : CONTROLLER : Received tuple [3] with tupleType = j0_p0_Result	| Source : helper_device_0 | Dest : CONTROLLER
+107.51 : CONTROLLER : Executing tuple on module ControllerModule
+
+107.51: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 75.00 to 107.51:
+
+107.51: [Host #2] utilization at 75.00 was 0.00%, now is 0.00%
+107.51: [Host #2] energy is 0.00 W*sec
+
+107.51: Data center's energy is 0.00 W*sec
+
+
+
+114.76: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 107.51 to 114.76:
+
+114.76: [Host #2] utilization at 107.51 was 0.00%, now is 0.00%
+114.76: [Host #2] energy is 0.00 W*sec
+
+114.76: Data center's energy is 0.00 W*sec
+
+114.76 : CONTROLLER : Completed execution of tuple 3on ControllerModule
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+114.86 : CONTROLLER : Received tuple [4] with tupleType = j0_p1_Data	| Source : CONTROLLER | Dest : CONTROLLER
+130.36 : helper_device_0 : Received tuple [4] with tupleType = j0_p1_Data	| Source : CONTROLLER | Dest : helper_device_0
+130.36 : helper_device_0 : Executing tuple on module helper_client_0
+
+130.36: [Host #3] utilization is 0.00%
+
+Energy consumption for the last time frame from 91.51 to 130.36:
+
+130.36: [Host #3] utilization at 91.51 was 0.00%, now is 0.00%
+130.36: [Host #3] energy is 0.00 W*sec
+
+130.36: Data center's energy is 0.00 W*sec
+
+
+130.86 : helper_device_1 : Received tuple [4] with tupleType = j0_p1_Data	| Source : CONTROLLER | Dest : helper_device_1
+
+140.46: [Host #3] utilization is 0.00%
+
+Energy consumption for the last time frame from 130.36 to 140.46:
+
+140.46: [Host #3] utilization at 130.36 was 0.00%, now is 0.00%
+140.46: [Host #3] energy is 0.00 W*sec
+
+140.46: Data center's energy is 0.00 W*sec
+
+140.46 : helper_device_0 : Completed execution of tuple 4on helper_client_0
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from helper_device_0 with event tag = 20
+140.56 : helper_device_0 : Received tuple [5] with tupleType = j0_p1_Result	| Source : helper_device_0 | Dest : helper_device_0
+150.00 : Initiator1_t : Sending tuple with tupleId = 6
+156.56 : CONTROLLER : Received tuple [5] with tupleType = j0_p1_Result	| Source : helper_device_0 | Dest : CONTROLLER
+156.56 : CONTROLLER : Executing tuple on module ControllerModule
+
+156.56: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 114.76 to 156.56:
+
+156.56: [Host #2] utilization at 114.76 was 0.00%, now is 0.00%
+156.56: [Host #2] energy is 0.00 W*sec
+
+156.56: Data center's energy is 0.00 W*sec
+
+
+
+163.80: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 156.56 to 163.80:
+
+163.80: [Host #2] utilization at 156.56 was 0.00%, now is 0.00%
+163.80: [Host #2] energy is 0.00 W*sec
+
+163.80: Data center's energy is 0.00 W*sec
+
+163.80 : CONTROLLER : Completed execution of tuple 5on ControllerModule
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+163.90 : CONTROLLER : Received tuple [7] with tupleType = j0_p2_Data	| Source : CONTROLLER | Dest : CONTROLLER
+165.00 : CONTROLLER : Received tuple [6] with tupleType = Initiator1_t	| Source : Initiator1_t | Dest : CONTROLLER
+165.00 : CONTROLLER : Executing tuple on module ControllerModule
+
+165.00: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 163.80 to 165.00:
+
+165.00: [Host #2] utilization at 163.80 was 0.00%, now is 0.00%
+165.00: [Host #2] energy is 0.00 W*sec
+
+165.00: Data center's energy is 0.00 W*sec
+
+
+
+165.81: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 165.00 to 165.81:
+
+165.81: [Host #2] utilization at 165.00 was 0.00%, now is 0.00%
+165.81: [Host #2] energy is 0.00 W*sec
+
+165.81: Data center's energy is 0.00 W*sec
+
+165.81 : CONTROLLER : Completed execution of tuple 6on ControllerModule
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+165.91 : CONTROLLER : Received tuple [8] with tupleType = j1_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+179.40 : helper_device_0 : Received tuple [7] with tupleType = j0_p2_Data	| Source : CONTROLLER | Dest : helper_device_0
+179.40 : helper_device_0 : Executing tuple on module helper_client_0
+
+179.40: [Host #3] utilization is 0.00%
+
+Energy consumption for the last time frame from 140.46 to 179.40:
+
+179.40: [Host #3] utilization at 140.46 was 0.00%, now is 0.00%
+179.40: [Host #3] energy is 0.00 W*sec
+
+179.40: Data center's energy is 0.00 W*sec
+
+
+179.90 : helper_device_1 : Received tuple [7] with tupleType = j0_p2_Data	| Source : CONTROLLER | Dest : helper_device_1
+181.41 : helper_device_0 : Received tuple [8] with tupleType = j1_p0_Data	| Source : CONTROLLER | Dest : helper_device_0
+181.91 : helper_device_1 : Received tuple [8] with tupleType = j1_p0_Data	| Source : CONTROLLER | Dest : helper_device_1
+181.91 : helper_device_1 : Executing tuple on module helper_client_1
+
+189.50: [Host #3] utilization is 0.00%
+
+Energy consumption for the last time frame from 179.40 to 189.50:
+
+189.50: [Host #3] utilization at 179.40 was 0.00%, now is 0.00%
+189.50: [Host #3] energy is 0.00 W*sec
+
+189.50: Data center's energy is 0.00 W*sec
+
+189.50 : helper_device_0 : Completed execution of tuple 7on helper_client_0
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from helper_device_0 with event tag = 20
+189.60 : helper_device_0 : Received tuple [9] with tupleType = j0_p2_Result	| Source : helper_device_0 | Dest : helper_device_0
+
+191.91: [Host #4] utilization is 0.00%
+
+Energy consumption for the last time frame from 0.00 to 191.91:
+
+191.91: [Host #4] utilization at 0.00 was 0.00%, now is 0.00%
+191.91: [Host #4] energy is 0.00 W*sec
+
+191.91: Data center's energy is 0.00 W*sec
+
+191.91 : helper_device_1 : Completed execution of tuple 8on helper_client_1
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from helper_device_1 with event tag = 20
+
+192.01: [Host #4] utilization is 0.00%
+
+Energy consumption for the last time frame from 191.91 to 192.01:
+
+192.01: [Host #4] utilization at 191.91 was 0.00%, now is 0.00%
+192.01: [Host #4] energy is 0.00 W*sec
+
+192.01: Data center's energy is 0.00 W*sec
+
+
+192.01 : helper_device_1 : Received tuple [10] with tupleType = j1_p0_Result	| Source : helper_device_1 | Dest : helper_device_1
+205.60 : CONTROLLER : Received tuple [9] with tupleType = j0_p2_Result	| Source : helper_device_0 | Dest : CONTROLLER
+205.60 : CONTROLLER : Executing tuple on module ControllerModule
+
+205.60: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 165.81 to 205.60:
+
+205.60: [Host #2] utilization at 165.81 was 0.00%, now is 0.00%
+205.60: [Host #2] energy is 0.00 W*sec
+
+205.60: Data center's energy is 0.00 W*sec
+
+
+208.01 : CONTROLLER : Received tuple [10] with tupleType = j1_p0_Result	| Source : helper_device_1 | Dest : CONTROLLER
+208.01 : CONTROLLER : Executing tuple on module ControllerModule
+
+208.01: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 205.60 to 208.01:
+
+208.01: [Host #2] utilization at 205.60 was 0.00%, now is 0.00%
+208.01: [Host #2] energy is 0.00 W*sec
+
+208.01: Data center's energy is 0.00 W*sec
+
+
+
+218.01: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 208.01 to 218.01:
+
+218.01: [Host #2] utilization at 208.01 was 0.00%, now is 0.00%
+218.01: [Host #2] energy is 0.00 W*sec
+
+218.01: Data center's energy is 0.00 W*sec
+
+218.01 : CONTROLLER : Completed execution of tuple 9on ControllerModule
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+218.11 : CONTROLLER : Received tuple [11] with tupleType = Finalizer0_t	| Source : CONTROLLER | Dest : CONTROLLER
+
+228.01: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 218.01 to 228.01:
+
+228.01: [Host #2] utilization at 218.01 was 0.00%, now is 0.00%
+228.01: [Host #2] energy is 0.00 W*sec
+
+228.01: Data center's energy is 0.00 W*sec
+
+228.01 : CONTROLLER : Completed execution of tuple 10on ControllerModule
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+228.11 : CONTROLLER : Received tuple [12] with tupleType = j1_p1_Data	| Source : CONTROLLER | Dest : CONTROLLER
+233.11 : Finalizer0 : Received tuple 11on Finalizer0_t
+243.61 : helper_device_0 : Received tuple [12] with tupleType = j1_p1_Data	| Source : CONTROLLER | Dest : helper_device_0
+244.11 : helper_device_1 : Received tuple [12] with tupleType = j1_p1_Data	| Source : CONTROLLER | Dest : helper_device_1
+244.11 : helper_device_1 : Executing tuple on module helper_client_1
+
+244.11: [Host #4] utilization is 0.00%
+
+Energy consumption for the last time frame from 192.01 to 244.11:
+
+244.11: [Host #4] utilization at 192.01 was 0.00%, now is 0.00%
+244.11: [Host #4] energy is 0.00 W*sec
+
+244.11: Data center's energy is 0.00 W*sec
+
+
+250.00 : Initiator2_t : Sending tuple with tupleId = 13
+
+254.21: [Host #4] utilization is 0.00%
+
+Energy consumption for the last time frame from 244.11 to 254.21:
+
+254.21: [Host #4] utilization at 244.11 was 0.00%, now is 0.00%
+254.21: [Host #4] energy is 0.00 W*sec
+
+254.21: Data center's energy is 0.00 W*sec
+
+254.21 : helper_device_1 : Completed execution of tuple 12on helper_client_1
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from helper_device_1 with event tag = 20
+254.31 : helper_device_1 : Received tuple [14] with tupleType = j1_p1_Result	| Source : helper_device_1 | Dest : helper_device_1
+265.00 : CONTROLLER : Received tuple [13] with tupleType = Initiator2_t	| Source : Initiator2_t | Dest : CONTROLLER
+265.00 : CONTROLLER : Executing tuple on module ControllerModule
+
+265.00: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 228.01 to 265.00:
+
+265.00: [Host #2] utilization at 228.01 was 0.00%, now is 0.00%
+265.00: [Host #2] energy is 0.00 W*sec
+
+265.00: Data center's energy is 0.00 W*sec
+
+
+
+265.81: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 265.00 to 265.81:
+
+265.81: [Host #2] utilization at 265.00 was 0.00%, now is 0.00%
+265.81: [Host #2] energy is 0.00 W*sec
+
+265.81: Data center's energy is 0.00 W*sec
+
+265.81 : CONTROLLER : Completed execution of tuple 13on ControllerModule
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+265.91 : CONTROLLER : Received tuple [15] with tupleType = j2_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+270.31 : CONTROLLER : Received tuple [14] with tupleType = j1_p1_Result	| Source : helper_device_1 | Dest : CONTROLLER
+270.31 : CONTROLLER : Executing tuple on module ControllerModule
+
+270.31: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 265.81 to 270.31:
+
+270.31: [Host #2] utilization at 265.81 was 0.00%, now is 0.00%
+270.31: [Host #2] energy is 0.00 W*sec
+
+270.31: Data center's energy is 0.00 W*sec
+
+
+
+277.56: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 270.31 to 277.56:
+
+277.56: [Host #2] utilization at 270.31 was 0.00%, now is 0.00%
+277.56: [Host #2] energy is 0.00 W*sec
+
+277.56: Data center's energy is 0.00 W*sec
+
+277.56 : CONTROLLER : Completed execution of tuple 14on ControllerModule
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+277.66 : CONTROLLER : Received tuple [16] with tupleType = j1_p2_Data	| Source : CONTROLLER | Dest : CONTROLLER
+281.41 : helper_device_0 : Received tuple [15] with tupleType = j2_p0_Data	| Source : CONTROLLER | Dest : helper_device_0
+281.41 : helper_device_0 : Executing tuple on module helper_client_0
+
+281.41: [Host #3] utilization is 0.00%
+
+Energy consumption for the last time frame from 189.50 to 281.41:
+
+281.41: [Host #3] utilization at 189.50 was 0.00%, now is 0.00%
+281.41: [Host #3] energy is 0.00 W*sec
+
+281.41: Data center's energy is 0.00 W*sec
+
+
+281.91 : helper_device_1 : Received tuple [15] with tupleType = j2_p0_Data	| Source : CONTROLLER | Dest : helper_device_1
+
+291.51: [Host #3] utilization is 0.00%
+
+Energy consumption for the last time frame from 281.41 to 291.51:
+
+291.51: [Host #3] utilization at 281.41 was 0.00%, now is 0.00%
+291.51: [Host #3] energy is 0.00 W*sec
+
+291.51: Data center's energy is 0.00 W*sec
+
+291.51 : helper_device_0 : Completed execution of tuple 15on helper_client_0
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from helper_device_0 with event tag = 20
+291.61 : helper_device_0 : Received tuple [17] with tupleType = j2_p0_Result	| Source : helper_device_0 | Dest : helper_device_0
+293.16 : helper_device_0 : Received tuple [16] with tupleType = j1_p2_Data	| Source : CONTROLLER | Dest : helper_device_0
+293.66 : helper_device_1 : Received tuple [16] with tupleType = j1_p2_Data	| Source : CONTROLLER | Dest : helper_device_1
+293.66 : helper_device_1 : Executing tuple on module helper_client_1
+
+293.66: [Host #4] utilization is 0.00%
+
+Energy consumption for the last time frame from 254.21 to 293.66:
+
+293.66: [Host #4] utilization at 254.21 was 0.00%, now is 0.00%
+293.66: [Host #4] energy is 0.00 W*sec
+
+293.66: Data center's energy is 0.00 W*sec
+
+
+
+303.76: [Host #4] utilization is 0.00%
+
+Energy consumption for the last time frame from 293.66 to 303.76:
+
+303.76: [Host #4] utilization at 293.66 was 0.00%, now is 0.00%
+303.76: [Host #4] energy is 0.00 W*sec
+
+303.76: Data center's energy is 0.00 W*sec
+
+303.76 : helper_device_1 : Completed execution of tuple 16on helper_client_1
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from helper_device_1 with event tag = 20
+303.86 : helper_device_1 : Received tuple [18] with tupleType = j1_p2_Result	| Source : helper_device_1 | Dest : helper_device_1
+307.61 : CONTROLLER : Received tuple [17] with tupleType = j2_p0_Result	| Source : helper_device_0 | Dest : CONTROLLER
+307.61 : CONTROLLER : Executing tuple on module ControllerModule
+
+307.61: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 277.56 to 307.61:
+
+307.61: [Host #2] utilization at 277.56 was 0.00%, now is 0.00%
+307.61: [Host #2] energy is 0.00 W*sec
+
+307.61: Data center's energy is 0.00 W*sec
+
+
+
+314.86: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 307.61 to 314.86:
+
+314.86: [Host #2] utilization at 307.61 was 0.00%, now is 0.00%
+314.86: [Host #2] energy is 0.00 W*sec
+
+314.86: Data center's energy is 0.00 W*sec
+
+314.86 : CONTROLLER : Completed execution of tuple 17on ControllerModule
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+314.96 : CONTROLLER : Received tuple [19] with tupleType = j2_p1_Data	| Source : CONTROLLER | Dest : CONTROLLER
+319.86 : CONTROLLER : Received tuple [18] with tupleType = j1_p2_Result	| Source : helper_device_1 | Dest : CONTROLLER
+319.86 : CONTROLLER : Executing tuple on module ControllerModule
+
+319.86: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 314.86 to 319.86:
+
+319.86: [Host #2] utilization at 314.86 was 0.00%, now is 0.00%
+319.86: [Host #2] energy is 0.00 W*sec
+
+319.86: Data center's energy is 0.00 W*sec
+
+
+
+327.10: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 319.86 to 327.10:
+
+327.10: [Host #2] utilization at 319.86 was 0.00%, now is 0.00%
+327.10: [Host #2] energy is 0.00 W*sec
+
+327.10: Data center's energy is 0.00 W*sec
+
+327.10 : CONTROLLER : Completed execution of tuple 18on ControllerModule
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+327.20 : CONTROLLER : Received tuple [20] with tupleType = Finalizer1_t	| Source : CONTROLLER | Dest : CONTROLLER
+330.46 : helper_device_0 : Received tuple [19] with tupleType = j2_p1_Data	| Source : CONTROLLER | Dest : helper_device_0
+330.46 : helper_device_0 : Executing tuple on module helper_client_0
+
+330.46: [Host #3] utilization is 0.00%
+
+Energy consumption for the last time frame from 291.51 to 330.46:
+
+330.46: [Host #3] utilization at 291.51 was 0.00%, now is 0.00%
+330.46: [Host #3] energy is 0.00 W*sec
+
+330.46: Data center's energy is 0.00 W*sec
+
+
+330.96 : helper_device_1 : Received tuple [19] with tupleType = j2_p1_Data	| Source : CONTROLLER | Dest : helper_device_1
+
+340.56: [Host #3] utilization is 0.00%
+
+Energy consumption for the last time frame from 330.46 to 340.56:
+
+340.56: [Host #3] utilization at 330.46 was 0.00%, now is 0.00%
+340.56: [Host #3] energy is 0.00 W*sec
+
+340.56: Data center's energy is 0.00 W*sec
+
+340.56 : helper_device_0 : Completed execution of tuple 19on helper_client_0
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from helper_device_0 with event tag = 20
+340.66 : helper_device_0 : Received tuple [21] with tupleType = j2_p1_Result	| Source : helper_device_0 | Dest : helper_device_0
+342.20 : Finalizer1 : Received tuple 20on Finalizer1_t
+350.00 : Initiator3_t : Sending tuple with tupleId = 22
+356.66 : CONTROLLER : Received tuple [21] with tupleType = j2_p1_Result	| Source : helper_device_0 | Dest : CONTROLLER
+356.66 : CONTROLLER : Executing tuple on module ControllerModule
+
+356.66: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 327.10 to 356.66:
+
+356.66: [Host #2] utilization at 327.10 was 0.00%, now is 0.00%
+356.66: [Host #2] energy is 0.00 W*sec
+
+356.66: Data center's energy is 0.00 W*sec
+
+
+
+363.90: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 356.66 to 363.90:
+
+363.90: [Host #2] utilization at 356.66 was 0.00%, now is 0.00%
+363.90: [Host #2] energy is 0.00 W*sec
+
+363.90: Data center's energy is 0.00 W*sec
+
+363.90 : CONTROLLER : Completed execution of tuple 21on ControllerModule
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+364.00 : CONTROLLER : Received tuple [23] with tupleType = j2_p2_Data	| Source : CONTROLLER | Dest : CONTROLLER
+365.00 : CONTROLLER : Received tuple [22] with tupleType = Initiator3_t	| Source : Initiator3_t | Dest : CONTROLLER
+365.00 : CONTROLLER : Executing tuple on module ControllerModule
+
+365.00: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 363.90 to 365.00:
+
+365.00: [Host #2] utilization at 363.90 was 0.00%, now is 0.00%
+365.00: [Host #2] energy is 0.00 W*sec
+
+365.00: Data center's energy is 0.00 W*sec
+
+
+
+365.81: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 365.00 to 365.81:
+
+365.81: [Host #2] utilization at 365.00 was 0.00%, now is 0.00%
+365.81: [Host #2] energy is 0.00 W*sec
+
+365.81: Data center's energy is 0.00 W*sec
+
+365.81 : CONTROLLER : Completed execution of tuple 22on ControllerModule
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+365.91 : CONTROLLER : Received tuple [24] with tupleType = j3_p0_Data	| Source : CONTROLLER | Dest : CONTROLLER
+379.50 : helper_device_0 : Received tuple [23] with tupleType = j2_p2_Data	| Source : CONTROLLER | Dest : helper_device_0
+379.50 : helper_device_0 : Executing tuple on module helper_client_0
+
+379.50: [Host #3] utilization is 0.00%
+
+Energy consumption for the last time frame from 340.56 to 379.50:
+
+379.50: [Host #3] utilization at 340.56 was 0.00%, now is 0.00%
+379.50: [Host #3] energy is 0.00 W*sec
+
+379.50: Data center's energy is 0.00 W*sec
+
+
+380.00 : helper_device_1 : Received tuple [23] with tupleType = j2_p2_Data	| Source : CONTROLLER | Dest : helper_device_1
+381.41 : helper_device_0 : Received tuple [24] with tupleType = j3_p0_Data	| Source : CONTROLLER | Dest : helper_device_0
+381.91 : helper_device_1 : Received tuple [24] with tupleType = j3_p0_Data	| Source : CONTROLLER | Dest : helper_device_1
+381.91 : helper_device_1 : Executing tuple on module helper_client_1
+
+381.91: [Host #4] utilization is 0.00%
+
+Energy consumption for the last time frame from 303.76 to 381.91:
+
+381.91: [Host #4] utilization at 303.76 was 0.00%, now is 0.00%
+381.91: [Host #4] energy is 0.00 W*sec
+
+381.91: Data center's energy is 0.00 W*sec
+
+
+
+389.60: [Host #3] utilization is 0.00%
+
+Energy consumption for the last time frame from 379.50 to 389.60:
+
+389.60: [Host #3] utilization at 379.50 was 0.00%, now is 0.00%
+389.60: [Host #3] energy is 0.00 W*sec
+
+389.60: Data center's energy is 0.00 W*sec
+
+389.60 : helper_device_0 : Completed execution of tuple 23on helper_client_0
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from helper_device_0 with event tag = 20
+389.70 : helper_device_0 : Received tuple [25] with tupleType = j2_p2_Result	| Source : helper_device_0 | Dest : helper_device_0
+
+392.01: [Host #4] utilization is 0.00%
+
+Energy consumption for the last time frame from 381.91 to 392.01:
+
+392.01: [Host #4] utilization at 381.91 was 0.00%, now is 0.00%
+392.01: [Host #4] energy is 0.00 W*sec
+
+392.01: Data center's energy is 0.00 W*sec
+
+392.01 : helper_device_1 : Completed execution of tuple 24on helper_client_1
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from helper_device_1 with event tag = 20
+392.11 : helper_device_1 : Received tuple [26] with tupleType = j3_p0_Result	| Source : helper_device_1 | Dest : helper_device_1
+405.70 : CONTROLLER : Received tuple [25] with tupleType = j2_p2_Result	| Source : helper_device_0 | Dest : CONTROLLER
+405.70 : CONTROLLER : Executing tuple on module ControllerModule
+
+405.70: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 365.81 to 405.70:
+
+405.70: [Host #2] utilization at 365.81 was 0.00%, now is 0.00%
+405.70: [Host #2] energy is 0.00 W*sec
+
+405.70: Data center's energy is 0.00 W*sec
+
+
+408.11 : CONTROLLER : Received tuple [26] with tupleType = j3_p0_Result	| Source : helper_device_1 | Dest : CONTROLLER
+408.11 : CONTROLLER : Executing tuple on module ControllerModule
+
+408.11: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 405.70 to 408.11:
+
+408.11: [Host #2] utilization at 405.70 was 0.00%, now is 0.00%
+408.11: [Host #2] energy is 0.00 W*sec
+
+408.11: Data center's energy is 0.00 W*sec
+
+
+
+418.11: [Host #2] utilization is 0.00%
+
+Energy consumption for the last time frame from 408.11 to 418.11:
+
+418.11: [Host #2] utilization at 408.11 was 0.00%, now is 0.00%
+418.11: [Host #2] energy is 0.00 W*sec
+
+418.11: Data center's energy is 0.00 W*sec
+
+418.11 : CONTROLLER : Completed execution of tuple 25on ControllerModule
+
+CloudInformationSevice.processOtherEvent(): Unable to handle a request from CONTROLLER with event tag = 20
+418.21 : CONTROLLER : Received tuple [27] with tupleType = Finalizer2_t	| Source : CONTROLLER | Dest : CONTROLLER

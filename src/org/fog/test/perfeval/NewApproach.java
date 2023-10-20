@@ -50,8 +50,8 @@ public class NewApproach {
         return "helper_client_" + i;
     }
 
-    public static int NUM_HELPERS = 2;
-    public static int NUM_JOBS = 10;
+    public static int NUM_HELPERS = 50;
+    public static int NUM_JOBS = 500;
     public static int FC_ID;
     public static String FC_CONTROLLER_DEVICE = "CONTROLLER";
     public static String FCModuleName = "ControllerModule";

@@ -61,8 +61,8 @@ public class Application {
 	 * @param ram
 	 */
 	public void addAppModule(String moduleName, int ram){
-		int mips = 1000;
-		long size = 10000;
+		int mips = 100;
+		long size = 1000;
 		long bw = 1000;
 		String vmm = "Xen";
 		

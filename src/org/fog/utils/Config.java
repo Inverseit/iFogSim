@@ -2,9 +2,9 @@ package org.fog.utils;
 
 public class Config {
 
-	public static final double RESOURCE_MGMT_INTERVAL = 100;
-	public static int MAX_SIMULATION_TIME = 1000 * 60 * 10; // 10 min
-	public static int RESOURCE_MANAGE_INTERVAL = 100;
+	public static final double RESOURCE_MGMT_INTERVAL = 10;
+	public static int MAX_SIMULATION_TIME = 1000000; // 10 * 10 min
+	public static int RESOURCE_MANAGE_INTERVAL = 10;
 	public static String FOG_DEVICE_ARCH = "x86";
 	public static String FOG_DEVICE_OS = "Linux";
 	public static String FOG_DEVICE_VMM = "Xen";
@@ -23,5 +23,5 @@ public class Config {
 	public static double Node_Communication_RANGE = 300.0; // In terms of meter
 	public static double clusteringLatency = 2.0; //milisecond
 
-	public static final int TRANSMISSION_START_DELAY = 50;
+	public static final int TRANSMISSION_START_DELAY = 0;
 }

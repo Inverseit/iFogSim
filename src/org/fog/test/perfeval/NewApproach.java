@@ -50,8 +50,9 @@ public class NewApproach {
         return "helper_client_" + i;
     }
 
-    public static int NUM_HELPERS = 50;
-    public static int NUM_JOBS = 500;
+    public static int FOG_DEVICE_LATENCY = 40;
+    public static int NUM_HELPERS = 1;
+    public static int NUM_JOBS = 1;
     public static int FC_ID;
     public static String FC_CONTROLLER_DEVICE = "CONTROLLER";
     public static String FCModuleName = "ControllerModule";
@@ -66,8 +67,8 @@ public class NewApproach {
         boolean trace_flag = false; // mean trace events
         Log.printLine("Running the tests.");
         try {
-//            Log.disable();
-            redirectOutputToFile(String.format("workable[%d]-N%d--J-%d.txt", System.currentTimeMillis() / (60 * 1000), NUM_HELPERS, NUM_JOBS));
+            // Log.disable();
+            redirectOutputToFile(String.format("Sun22/experiment-L[%d]-(%d).txt", FOG_DEVICE_LATENCY, System.currentTimeMillis() / (60000) ));
             CloudSim.init(num_user, calendar, trace_flag);
             FogBroker mainBroker = new FogBroker("main");
             // DEVICES
@@ -88,9 +89,9 @@ public class NewApproach {
 
             CloudSim.startSimulation();
 
-//            CloudSim.stopSimulation();
+            CloudSim.stopSimulation();
 
-//            Log.printLine("SingleFemtoCloud simulation finished!");
+            Log.printLine("SingleFemtoCloud simulation finished!");
         } catch (Exception e) {
             e.printStackTrace();
             Log.printLine("Unwanted errors happen");
@@ -113,23 +114,26 @@ public class NewApproach {
 
     private static void createInfrastructure() {
         // create backing cloud
-        FogDevice cloud = createFogDevice("cloud", 44800, 40000, 100, 10000, 0, 0.01, 16*103, 16*83.25); // creates the fog device Cloud at the apex of the hierarchy with level=0
+        FogDevice cloud = createFogDevice("cloud", 44800, 40000, 100, 10000, -1, 0.01, 16*103, 16*83.25); // creates the fog device Cloud at the apex of the hierarchy with level=0
         cloud.setParentId(-1);
         // create the controller
-        FogDevice fcController = createFogDevice(FC_CONTROLLER_DEVICE, 2800, 4000, 1000, 1000, 1, 0.0, 200, 83.4333); // creates the fog device Proxy Server (level=1)
+        FogDevice fcController = createFogDevice(FC_CONTROLLER_DEVICE, 4000, 4000, 1000, 1000, 0, 0.1, 200, 83.4333); // creates the fog device Proxy Server (level=1)
         fcController.setParentId(cloud.getId()); // setting Cloud as parent of the Proxy Server
-        fcController.setUplinkLatency(1000); // latency of connection from Proxy Server to the Cloud is 100 ms
-
+        fcController.setUplinkLatency(100); // latency of connection from Proxy Server to the Cloud is 100 ms
+// TODO: fix this thing        set child to latency map
         fcControllers.add(fcController);
 
         FC_ID = fcController.getId();
     }
 
     private static void createHelper(int id){
-        FogDevice helperDevice = createFogDevice(getHelperId(id), 1000, 1000, 1000, 270, 2, 1,83.4333, 83);
+        // strong device
+        FogDevice helperDevice = createFogDevice(getHelperId(id), 1, 6000, 1000, 1000, 1, 0.1, 200, 83.4333);
+        // weak device
+        // FogDevice helperDevice = createFogDevice(getHelperId(id), 1000, 1000, 1000, 270, 2, 1,83.4333, 83);
         helperDevices.add(helperDevice);
         helperDevice.setParentId(FC_ID); // no parents, so no reuploading modueles
-        helperDevice.setUplinkLatency(15);
+        helperDevice.setUplinkLatency(FOG_DEVICE_LATENCY); // hardcoded 4ms as from https://www.sciencedirect.com/science/article/pii/S1574119221000675#:~:text=Results%20are%20encouraging%2C%20as%20the,1.5%25%20of%20the%20experiment%20duration.
     }
 
     private static void createHelpers(int helperNumber){
@@ -141,15 +145,15 @@ public class NewApproach {
     private static void createJobMeta(int id, int userId, String appId) {
         String sensor = getSensorName(id) + "_t";
         String jobInitiatorData = getSensorName(id) + "_t";
-        Sensor jobSensor = new Sensor(sensor, jobInitiatorData ,userId, appId, new FireOnce(100*id));
+        Sensor jobSensor = new Sensor(sensor, jobInitiatorData ,userId, appId, new FireOnce(500*id));
         sensors.add(jobSensor);
         Actuator display = new Actuator(getDisplayNameId(id), userId, appId, getDisplayName(id));
         actuators.add(display);
 
         display.setGatewayDeviceId(FC_ID);
-        display.setLatency(15.0);
+        display.setLatency(0.0);
         jobSensor.setGatewayDeviceId(FC_ID);
-        jobSensor.setLatency(15.0);
+        jobSensor.setLatency(0.0);
     }
 
     private static String getSensorName(int id) {
@@ -227,7 +231,7 @@ public class NewApproach {
         FogDevice fogdevice = null;
         try {
             fogdevice = new FogDevice(nodeName, characteristics,
-                    new AppModuleAllocationPolicy(hostList), storageList, 10, upBw, downBw, 0, ratePerMips);
+                    new AppModuleAllocationPolicy(hostList), storageList, 100, upBw, downBw, 0, ratePerMips);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -237,7 +241,7 @@ public class NewApproach {
     }
 
     private static Application addJobs(Application application){
-        int phaseCount = 3;
+        int phaseCount = 2;
 
         application.addAppModule(FCModuleName, 10);
         for (int i = 0; i < NUM_HELPERS; i++) {
@@ -247,19 +251,28 @@ public class NewApproach {
         for (int j = 0; j < NUM_JOBS; j++) {
 
             String jobInitiatorData = getSensorName(j) + "_t";
-            int scheduling_cpu = 2000;
-            int task_details_NW = 100;
+            int scheduling_cpu = 2;
+            int task_details_NW = 2000;
+            int factor = 1;
+            int cpu_factor = 4000 * 1000;
             application.addAppEdge(jobInitiatorData, FCModuleName, scheduling_cpu, task_details_NW, jobInitiatorData, Tuple.UP, AppEdge.SENSOR);
 
             String helperName = getHelperClientModuleName(job2helper(j));
             for (int phase = 0; phase < phaseCount; phase++) {
                   if (phase == 0){
                       application.addTupleMapping(FCModuleName, jobInitiatorData, packName(j, phase, false), new FractionalSelectivity(1.0));
-                      application.addAppEdge(FCModuleName, helperName, 10000, 500, packName(j, phase, false), Tuple.DOWN, AppEdge.MODULE);
+//                     controller sends  2000KB
+                      application.addAppEdge(FCModuleName, helperName, 5, 2000 * factor, packName(j, phase, false), Tuple.DOWN, AppEdge.MODULE);
+//                     helper sends back 200KB
+                      application.addAppEdge(helperName, FCModuleName, 800, 200 * factor, packName(j, phase, true), Tuple.UP, AppEdge.MODULE);
                   } else {
-                      application.addAppEdge(FCModuleName, helperName, 10000, 500, packName(j, phase, false), Tuple.DOWN, AppEdge.MODULE);
+                      // second stage
+                      // controller sends  3125KB
+                      application.addAppEdge(FCModuleName, helperName, 9.5, 3125 * factor, packName(j, phase, false), Tuple.DOWN, AppEdge.MODULE);
+                      // helper sends back 1000KB
+                      application.addAppEdge(helperName, FCModuleName, cpu_factor, 1000 * factor, packName(j, phase, true), Tuple.UP, AppEdge.MODULE);
                   }
-                  application.addAppEdge(helperName, FCModuleName, 20000, 1000, packName(j, phase, true), Tuple.UP, AppEdge.MODULE);
+
 
 //                Data -> Result edges
                   application.addTupleMapping(helperName, packName(j, phase, false), packName(j, phase, true), new FractionalSelectivity(1.0));

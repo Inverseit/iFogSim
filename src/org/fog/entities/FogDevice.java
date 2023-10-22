@@ -811,9 +811,9 @@ public class FogDevice extends PowerDatacenter {
         updateAllocatedMips(moduleName);
         processCloudletSubmit(ev, false);
         updateAllocatedMips(moduleName);
-		/*for(Vm vm : getHost().getVmList()){
+		for(Vm vm : getHost().getVmList()){
 			Logger.error(getName(), "MIPS allocated to "+((AppModule)vm).getName()+" = "+getHost().getTotalAllocatedMipsForVm(vm));
-		}*/
+		}
     }
 
     protected void processModuleArrival(SimEvent ev) {
